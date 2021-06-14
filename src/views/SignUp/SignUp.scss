@@ -1,0 +1,108 @@
+@import "../../assets/colors";
+
+.App {
+  height: 100vh;
+}
+
+.sign-up-wrapper {
+  .password-eye {
+    width: 25px;
+    position: absolute;
+    right: 16%;
+    cursor: pointer;
+  }
+  margin-top: 70px !important;
+  background-color: $white;
+  box-shadow: 0 1px 15px 2px rgba(34, 60, 80, 0.5);
+  .button-arrow-back {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+    z-index: 999;
+    background-color: rgba(206, 206, 206, 0.3);
+    border-radius: 100%;
+    border: 5px solid rgba(206, 206, 206, 0.5);
+    transition-duration: 0.3s;
+  }
+  .button-arrow-back:hover {
+    border: 5px solid rgba(206, 206, 206, 1);
+  }
+  .image-arrow-back {
+    width: 80%;
+  }
+  .form-wrapper {
+    height: 100%;
+    background-color: $bold-blue !important;
+  }
+  .sign-up-title {
+    margin-top: 100px !important;
+    color: $yellow;
+  }
+  .sign-up-subtitle {
+    color: $yellow;
+    font-size: 20px;
+    font-weight: lighter;
+  }
+  .form-wrapper {
+    width: 100%;
+  }
+  .error-validation-msg {
+    width: 70%;
+    color: $red;
+  }
+  .input-wrapper-signup {
+    display: flex;
+    align-items: center;
+    width: 75%;
+    height: 15%;
+    border-radius: 2px;
+    transition: height .3s, padding .3s;
+  }
+
+  input {
+    width: 100%;
+    position: relative;
+    height: 40px;
+    border: none;
+    position: relative;
+    border-bottom: 1px solid $white;
+    background: none;
+    color: $white;
+    font-size: 18px;
+  }
+  input:focus-within {
+    outline:none;
+  }
+  ::placeholder {
+    color: $white;
+  }
+  .have-account-sign-up {
+    color: $white;
+    font-size: 20px;
+    font-weight: lighter;
+    .sign-in-link {
+      color: $yellow;
+      font-weight: normal;
+    }
+  }
+  .sign-up-submit-button {
+    width: 70%;
+    height: 50px;
+    border: 2px solid $white;
+    border-radius: 20px;
+    background-color: $lightest-blue;
+    color: $white;
+    font-size: 20px;
+  }
+  .error-message-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background-color: rgba(87, 87, 87, 0.7);;
+  }
+}

@@ -1,0 +1,30 @@
+@import "../../assets/colors";
+
+
+.footer-wrapper {
+  position: absolute;
+  left: 12px;
+  width: 100% !important;
+  background-color: $white !important;
+  box-shadow: 0 13px 15px 10px #3b3b3b;
+  .icon {
+    width: 70px;
+    height: 45px;
+  }
+  p, h4 {
+    color: $bold-blue;
+  }
+  p {
+    font-size: 15px;
+    font-size: 15px;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    min-width: 150px;
+    li {
+      color: $lighter-blue;
+      font-size: 15px;
+    }
+  }
+}

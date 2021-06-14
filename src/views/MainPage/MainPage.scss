@@ -1,0 +1,19 @@
+@import "../../assets/colors";
+
+.try-free-button, .continue-button  {
+    font-size: 18px !important;
+    color: $bold-blue !important;
+}
+
+.try-free-button:hover {
+    border: 1px solid $lighter-blue !important;
+    transition-duration: 0.2s;
+}
+
+.continue-button {
+    background-color: $yellow !important;
+    img {
+        width: 25px;
+        height: 25px;
+    }
+}

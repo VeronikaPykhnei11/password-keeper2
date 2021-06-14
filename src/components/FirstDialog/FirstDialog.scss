@@ -1,0 +1,44 @@
+@import "../../assets/colors";
+
+.dialog-wrapper {
+  height: 400px !important;
+}
+
+.first-line-dialog {
+  height: 40px;
+  background-color: $bold-blue;
+  border-radius: 10px 10px 0 0;
+}
+
+.red, .yellow, .green {
+  background-color: darkred;
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+}
+
+.yellow {
+  background-color: #ffe600;
+}
+
+.green {
+  background-color: #019c01;
+}
+
+.second-line-dialog {
+  height: 90%;
+}
+
+.second-col-dialog {
+  background-color: $white;
+  border-radius: 0 0 10px 10px;
+}
+
+p {
+  font-size: 23px;
+  margin: 0;
+}
+
+.image-wrapper {
+  height: 10%;
+}

@@ -1,0 +1,148 @@
+@import "../../assets/colors";
+
+.toggle-button {
+  width: 10%;
+  border: none !important;
+}
+.App {
+  height: auto !important;
+}
+
+.navbar {
+  height: 65px;
+}
+
+.nav-link {
+  font-size: 16px;
+  color: $white !important;
+  margin-right: 10px;
+  border-bottom: 1px solid $lighter-blue;
+}
+
+.nav-link:hover {
+  border-bottom: 1px solid $white;
+  transition-duration: 0.3s !important;
+}
+
+.sign-up-button, .sign-in-button {
+  width: 100%;
+  height: 40px !important;
+}
+
+.sign-up-button:hover {
+  border: 1px solid $lighter-blue !important;
+  transition-duration: 0.3s !important;
+}
+
+.sign-in-button:hover {
+  background: transparent !important;
+  color: $white !important;
+  border: 2px solid $white !important;
+  animation:to-right-1 1s linear forwards;
+  transition-duration: 1s !important;
+}
+
+.scroll-nav {
+  border-radius: 40px;
+  background-color: $white;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.3);
+  height: 60px;
+  .nav-link {
+    font-size: 16px;
+    color: $bold-blue !important;
+    margin-right: 10px;
+    border-bottom: 1px solid $white;
+  }
+  .nav-link:hover {
+    border-bottom: 1px solid $bold-blue;
+    transition-duration: 0.3s !important;
+  }
+  .sign-up-button, .sign-in-button {
+    width: 100%;
+    height: 40px !important;
+  }
+  .sign-up-button {
+    background-color: $bold-blue;
+    color: $white;
+  }
+
+  .sign-in-button {
+    background-color: transparent;
+    border: 1px solid $bold-blue;
+    color: $bold-blue;
+  }
+
+  .sign-up-button:hover {
+    background-color: $bold-blue;
+    color: $white;
+    border: 1.5px solid $bold-blue !important;
+    transition-duration: 0.3s !important;
+  }
+
+  .sign-in-button:hover {
+    background: transparent !important;
+    color: $bold-blue !important;
+    border: 2px solid $bold-blue !important;
+    animation:to-right-1 1s linear forwards;
+    transition-duration: 1s !important;
+  }
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(30, 111, 92, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+}
+
+.sidebar-wrapper {
+  z-index: 999;
+  transition:left 1s !important;
+  position: fixed !important;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top:0;
+  overflow-x: hidden;
+  .content-wrapper {
+    height: 87%;
+  }
+  .first-row {
+    height: 80px;
+  }
+  .close-button {
+    background: transparent;
+    border: none;
+  }
+  ul {
+    padding-left: 10px !important;
+    list-style-type: none;
+    a {
+      font-size: 1.2em;
+      color: $bold-blue !important;
+      margin-right: 10px;
+      text-decoration: none;
+      border-bottom: 1px solid $white !important;
+    }
+    a:hover {
+      border-bottom: 1px solid $bold-blue !important;
+      transition-duration: 0.3s !important;
+    }
+  }
+  .sidebar-sign-in, .sidebar-sign-up {
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: $bold-blue;
+  }
+  .sidebar-sign-in {
+    background-color: transparent;
+    border: 2px solid $bold-blue;
+  }
+  .sidebar-sign-up {
+    background-color: $lighter-blue;
+    color: $white;
+    border: none;
+  }
+  .sidebar-sign-up:hover {
+    background-color: $bold-blue;
+    transition-duration: 0.3s;
+  }
+}
